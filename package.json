@@ -1,5 +1,5 @@
 {
-  "name": "meu-app-deluna",
+  "name": "nome-do-seu-projeto",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@netlify/blobs": "^3.0.0"
+    "pg": "^8.12.0"
   }
 }
