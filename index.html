@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Pacotes e Paradas - ML Deluna</title>
-
+    
     <meta name="theme-color" content="#3e5c9b">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha20a-H204h/h204h"
@@ -27,7 +27,7 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
-
+        
         .top-logo {
             display: block;
             width: 100%;
@@ -42,7 +42,7 @@
             color: #333;
         }
         body.light-theme .container {
-            background-color: rgba(240, 240, 240, 0.6);
+            background-color: rgba(240, 240, 240, 0.6); 
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
         body.light-theme .logo { filter: invert(0); }
@@ -63,9 +63,9 @@
             border: 1px solid #000000; /* Alterado para preto */
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
-        body.light-theme button {
+        body.light-theme button { 
             background-color: #008080;
-            color: white;
+            color: white; 
             border: none;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -79,7 +79,7 @@
         body.light-theme #stopsTable,
         body.light-theme #recordsTable,
         body.light-theme #completedStopsTable,
-        body.light-theme .gains-table {
+        body.light-theme .gains-table { 
             background-color: #e0e0e0;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
@@ -88,16 +88,16 @@
         }
         body.light-theme th { background-color: #008080; }
         body.light-theme td { color: #333; border-bottom: 1px solid #ddd; }
-        body.light-theme .observation-field {
-            background-color: #e9e9e9;
-            color: #333;
+        body.light-theme .observation-field { 
+            background-color: #e9e9e9; 
+            color: #333; 
             border: 1px solid #000000; /* Alterado para preto */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         body.light-theme .filled-observation { background-color: #ffe8e8; }
         body.light-theme .stop-row.completed { background-color: #d4edda; }
         body.light-theme .stop-row.completed td { color: #666; }
-        body.light-theme .custom-popup-overlay .custom-popup-content,
+        body.light-theme .custom-popup-overlay .custom-popup-content, 
         body.light-theme .numeric-keyboard button,
         body.light-theme .observation-popup-content,
         body.light-theme #map {
@@ -106,21 +106,21 @@
             border: 1px solid #ccc;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
-
+        
         body.light-theme .numeric-keyboard button {
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
         body.light-theme .numeric-keyboard .numeric-key:hover {
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
         }
-
+        
         body.light-theme .custom-popup-content h3 {
             color: #333;
         }
         body.light-theme .numeric-input,
         body.light-theme .observation-popup-content textarea,
         body.light-theme .observation-popup-content input {
-            background-color: #e9e9e9;
+            background-color: #e9e9e9; 
             color: #333;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border: 1px solid #000000; /* Alterado para preto */
@@ -140,11 +140,11 @@
             background-color: #008080;
             color: white;
         }
-
+        
         body.light-theme .gains-value-cell {
             color: #000000;
         }
-        body.light-theme .gains-table th,
+        body.light-theme .gains-table th, 
         body.light-theme .gains-table td {
             border: 1px solid #bbb;
         }
@@ -171,7 +171,7 @@
         body.light-theme .observation-popup-content h3 {
             color: #333;
         }
-
+        
         body.light-theme .map-text {
             color: #000; /* Alteração: Escurece a palavra Mapa */
         }
@@ -181,7 +181,7 @@
             max-width: 900px;
             margin: 20px auto;
             padding: 20px;
-            background-color: rgba(30, 30, 30, 0.6);
+            background-color: rgba(30, 30, 30, 0.6); 
             border-radius: 10px;
             box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4); /* Alteração: Sombra branca */
             transition: background-color 0.3s, box-shadow 0.3s;
@@ -257,12 +257,12 @@
         #stopNumber, #quantity-paradas {
             border: 1px solid #000000;
         }
-
+        
         /* Borda preta nos campos de observação */
         .observation-field {
             border: 1px solid #000000;
         }
-
+        
         button {
             background-color: #008080;
             color: white;
@@ -306,7 +306,7 @@
         .table-container {
             overflow-x: auto;
         }
-
+        
         table,
         #stopsTable,
         #recordsTable,
@@ -317,7 +317,7 @@
             margin-top: 20px;
             box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4); /* Alteração: Sombra branca */
         }
-
+        
         th, td {
             padding: 8px;
             border-bottom: 1px solid #444;
@@ -886,7 +886,7 @@
                 <input type="text" id="quantity-paradas" placeholder="Quantidade de Pacotes" readonly required>
                 <button id="saveStopBtn" onclick="saveStopRecord()">Salvar Parada</button>
             </div>
-
+            
             <div class="total-container">
                 <div class="total-info">
                     Quantidade total: <span id="totalStopsCount" class="total-value">0</span>
@@ -1017,7 +1017,7 @@
             <button onclick="openSettingsPopup()">Configurações</button>
         </div>
     </div>
-
+    
     <div id="customPopupOverlay" class="custom-popup-overlay">
         <div class="custom-popup">
             <div class="custom-popup-content">
@@ -1051,7 +1051,7 @@
                             <td id="secondHalfGains" class="gains-value-cell"></td>
                         </tr>
                         <tr>
-                            <td>Total do Mês</td>
+                        <td>Total do Mês</td>
                             <td id="totalMonthGains" class="gains-value-cell"></td>
                         </tr>
                     </tbody>
@@ -1076,7 +1076,7 @@
             </div>
         </div>
     </div>
-
+    
     <div id="fullPhotoPopupOverlay" class="custom-popup-overlay" onclick="closeFullPhotoPopup()">
         <div class="custom-popup-content" onclick="event.stopPropagation();">
             <img id="fullPhoto" src="" style="max-width: 90vw; max-height: 90vh; object-fit: contain;">
@@ -1169,7 +1169,7 @@
             <button onclick="closeSettingsPopup()" style="margin-top: 20px;">Fechar</button>
         </div>
     </div>
-
+    
     <div id="selectRoutePopupOverlay" class="custom-popup-overlay">
         <div class="custom-popup-content">
             <h3>Selecione a Rota para Finalizar</h3>
@@ -1203,6 +1203,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha20a-g204g/g204g"
         crossorigin=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script>
         // Adicionado para PWA: Registrar o service worker
         if ('serviceWorker' in navigator) {
@@ -1216,8 +1217,13 @@
                     });
             });
         }
-
-        // Variável global para rastrear a aba ativa
+        
+        // --- INÍCIO: NOVAS VARIÁVEIS E CONFIGURAÇÕES DO SUPABASE ---
+        const SUPABASE_URL = 'https://qrpexuzwnhxcrpctskdd.supabase.co';
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFycGV4dXp3bmh4Y3JwY3Rza2RkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTcyODU0NDMsImV4cCI6MjA3Mjg2MTQ0M30.lHGA-Utnn2IUuXv3u5fVN1ulBvp8lkuRgL1lCzGg_qU';
+        const supabase = Supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+        
+        let currentRouteId = null;
         let currentTabIndex = 0;
         const tabNames = ['paradas', 'pacotes', 'gains'];
 
@@ -1232,32 +1238,24 @@
             tabContents.forEach(tab => tab.classList.remove('active'));
             const tabButtons = document.querySelectorAll('.tab-button');
             tabButtons.forEach(button => button.classList.remove('active'));
-
+            
             document.getElementById(tabName).classList.add('active');
-
+            
             const button = document.querySelector(`.tab-button[onclick*="openTab('${tabName}')"]`);
             if (button) {
                 button.classList.add('active');
             }
-
+            
             currentTabIndex = tabIndex;
 
             if (tabName === 'gains') {
                 updateGainsTable();
             }
         }
-
-        // Variáveis que agora serão preenchidas por requisições de rede
-        let records = [];
-        let stops = [];
-        let drivers = [];
-        let editIndex = -1;
-        let editStopIndex = -1;
-        let currentObservationIndex = -1;
-
+        
         const monthNames = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
         const dayNames = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"];
-
+        
         function formatDate(dateString) {
             const date = new Date(dateString + 'T00:00:00');
             const day = String(date.getDate()).padStart(2, '0');
@@ -1273,229 +1271,330 @@
             const year = date.getFullYear();
             return `${day}/${month}/${year}`;
         }
+        
+        async function loadRecordsFromSupabase() {
+            const { data: records, error } = await supabase
+                .from('rotas')
+                .select(`
+                    id,
+                    data,
+                    rota,
+                    motorista,
+                    quantidade_total,
+                    paradas (quantidade)
+                `)
+                .order('data', { ascending: false });
 
-        // Função para carregar motoristas do backend
-        async function loadDrivers() {
-            try {
-                const response = await fetch('/api/drivers');
-                if (!response.ok) throw new Error('Falha ao carregar motoristas.');
-                drivers = await response.json();
-                populateDriverDatalist();
-            } catch (error) {
-                console.error('Erro ao carregar motoristas:', error);
+            if (error) {
+                console.error('Erro ao carregar rotas:', error);
+                showAlert('Erro ao carregar os dados. Verifique a conexão.');
+                return;
             }
-        }
 
-        function populateDriverDatalist() {
-            const driverList = document.getElementById('driver-list');
-            driverList.innerHTML = '';
-            const uniqueDrivers = [...new Set(drivers)].sort();
-            uniqueDrivers.forEach(driver => {
-                const option = document.createElement('option');
-                option.value = driver;
-                driverList.appendChild(option);
+            const tableBody = document.getElementById('tableBody');
+            tableBody.innerHTML = '';
+            records.forEach(record => {
+                const totalPackages = record.paradas ? record.paradas.reduce((sum, p) => sum + p.quantidade, 0) : record.quantidade_total;
+                const row = document.createElement('tr');
+                row.classList.add('record-row');
+                row.onclick = () => showRouteDetails(record.id);
+                row.innerHTML = `
+                    <td>${formatDate(record.data)}</td>
+                    <td>${record.rota || ''}</td>
+                    <td>${record.motorista}</td>
+                    <td><b>${totalPackages}</b></td>
+                    <td class="actions">
+                        <button class="add-btn" onclick="event.stopPropagation(); addQuantity('${record.id}');">+</button>
+                        <button class="edit-btn" onclick="event.stopPropagation(); editRecord('${record.id}');">E</button>
+                        <button class="delete-btn" onclick="event.stopPropagation(); deleteRecord('${record.id}');">-</button>
+                    </td>
+                `;
+                tableBody.appendChild(row);
             });
-        }
 
-        // FUNÇÃO ATUALIZADA - Carrega os registros de pacotes do backend
-        async function loadRecords() {
-            try {
-                const response = await fetch('/api/records');
-                if (!response.ok) throw new Error('Falha ao carregar dados do servidor.');
-                records = await response.json();
-                const tableBody = document.getElementById('tableBody');
-                tableBody.innerHTML = '';
-                records.forEach((record, index) => {
-                    const row = document.createElement('tr');
-                    row.classList.add('record-row');
-                    row.onclick = () => showRouteDetails(record.date, record.route);
-                    row.innerHTML = `
-                        <td>${formatDate(record.date)}</td>
-                        <td>${record.route || record.initials || ''}</td>
-                        <td>${record.driver}</td>
-                        <td><b>${record.quantity}</b></td>
-                        <td class="actions">
-                            <button class="add-btn" onclick="event.stopPropagation(); addQuantity(${index});">+</button>
-                            <button class="edit-btn" onclick="event.stopPropagation(); editRecord(${index});">E</button>
-                            <button class="delete-btn" onclick="event.stopPropagation(); deleteRecord(${index});">-</button>
-                        </td>
-                    `;
-                    tableBody.appendChild(row);
+            // Carrega a lista de motoristas dinamicamente
+            const { data: driversData, error: driversError } = await supabase.from('rotas').select('motorista');
+            if (driversData) {
+                const uniqueDrivers = [...new Set(driversData.map(d => d.motorista))].sort();
+                const driverList = document.getElementById('driver-list');
+                driverList.innerHTML = '';
+                uniqueDrivers.forEach(driver => {
+                    const option = document.createElement('option');
+                    option.value = driver;
+                    driverList.appendChild(option);
                 });
-                populateDriverDatalist();
-            } catch (error) {
-                showAlert('Erro ao carregar registros: ' + error.message);
             }
         }
-
-        // FUNÇÃO ATUALIZADA - Adiciona ou atualiza um registro no backend
+        
+        let editIndex = null;
         async function addOrUpdateRecord() {
             const date = document.getElementById('date-pacotes').value;
             const quantity = document.getElementById('quantity-pacotes').value;
             const route = document.getElementById('route-pacotes').value;
             const driver = document.getElementById('driver-pacotes').value;
-
+            
             if (!date || !quantity || !route || !driver) {
                 showAlert('Por favor, preencha todos os campos.');
                 return;
             }
-
-            const record = { date, quantity: Number(quantity), route, driver };
-
-            try {
-                const response = await fetch('/api/records', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(record)
-                });
-
-                if (!response.ok) throw new Error('Falha ao salvar o registro.');
-
-                const newRecord = await response.json();
-                // O `id` do registro agora vem do banco de dados
-                records.unshift(newRecord);
-                loadRecords();
-                clearFormPacotes();
-                document.getElementById('addOrUpdateBtn').textContent = 'Adicionar';
-                document.getElementById('editStopsContainer').style.display = 'none';
-                showAlert('Registro salvo com sucesso!');
-            } catch (error) {
-                showAlert('Erro ao salvar registro: ' + error.message);
+            
+            const newRecord = { 
+                data: date, 
+                quantidade_total: Number(quantity), 
+                rota: route, 
+                motorista: driver 
+            };
+            
+            if (editIndex === null) {
+                const { error } = await supabase
+                .from('rotas')
+                .insert(newRecord);
+                
+                if (error) {
+                    console.error('Erro ao adicionar rota:', error);
+                    showAlert('Erro ao salvar a rota. Tente novamente.');
+                } else {
+                    showAlert('Rota adicionada com sucesso!');
+                }
+            } else {
+                const { error } = await supabase
+                .from('rotas')
+                .update(newRecord)
+                .eq('id', editIndex);
+                
+                if (error) {
+                    console.error('Erro ao atualizar rota:', error);
+                    showAlert('Erro ao atualizar a rota. Tente novamente.');
+                } else {
+                    showAlert('Rota atualizada com sucesso!');
+                }
             }
+            
+            loadRecordsFromSupabase();
+            clearFormPacotes();
+            document.getElementById('addOrUpdateBtn').textContent = 'Adicionar';
+            editIndex = null;
+            document.getElementById('editStopsContainer').style.display = 'none';
         }
 
-        async function editRecord(index) {
-            const record = records[index];
-            document.getElementById('date-pacotes').value = record.date;
-            document.getElementById('quantity-pacotes').value = record.quantity;
-            document.getElementById('route-pacotes').value = record.route;
-            document.getElementById('driver-pacotes').value = record.driver;
-            editIndex = index;
+        async function editRecord(id) {
+            const { data, error } = await supabase.from('rotas').select('*').eq('id', id).single();
+            if (error) {
+                console.error('Erro ao carregar registro para edição:', error);
+                return;
+            }
+            document.getElementById('date-pacotes').value = data.data;
+            document.getElementById('quantity-pacotes').value = data.quantidade_total;
+            document.getElementById('route-pacotes').value = data.rota;
+            document.getElementById('driver-pacotes').value = data.motorista;
+            editIndex = id;
             document.getElementById('addOrUpdateBtn').textContent = 'Atualizar';
-            document.getElementById('editStopsContainer').style.display = 'none'; // Desabilita por enquanto
+            document.getElementById('editStopsContainer').style.display = 'flex';
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        function editStops() {
-            // A lógica de edição de paradas precisa ser refeita para o backend
-            showAlert('A edição de paradas ainda não está implementada no backend.');
+        async function editStops() {
+            if (editIndex !== null) {
+                const { data, error } = await supabase.from('rotas').select(`*, paradas(*)`).eq('id', editIndex).single();
+                if (error || !data.paradas) {
+                    showAlert('Esta rota não tem detalhes de paradas para editar.');
+                    return;
+                }
+                currentRouteId = data.id;
+                loadStopsForRoute(currentRouteId);
+                openTab('paradas', 0);
+                showAlert(`Dados da rota "${data.rota}" carregados na aba de paradas para edição.`);
+            }
         }
 
-        async function addQuantity(index) {
+        async function addQuantity(id) {
             const quantityToAdd = prompt("Quantos pacotes você deseja somar?");
             if (quantityToAdd !== null && !isNaN(quantityToAdd) && quantityToAdd !== "") {
-                const newQuantity = Number(records[index].quantity) + Number(quantityToAdd);
-                try {
-                    const response = await fetch(`/api/records/${records[index].id}`, {
-                        method: 'PUT',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ quantity: newQuantity })
-                    });
-                    if (!response.ok) throw new Error('Falha ao atualizar a quantidade.');
-                    records[index].quantity = newQuantity;
-                    loadRecords();
-                } catch (error) {
-                    showAlert('Erro ao atualizar a quantidade: ' + error.message);
+                const { data, error } = await supabase.from('rotas').select('quantidade_total').eq('id', id).single();
+                if (error) {
+                    console.error('Erro ao carregar quantidade:', error);
+                    return;
                 }
+                const newQuantity = data.quantidade_total + Number(quantityToAdd);
+                await supabase.from('rotas').update({ quantidade_total: newQuantity }).eq('id', id);
+                loadRecordsFromSupabase();
             } else if (quantityToAdd !== null) {
                 showAlert("Por favor, insira um número válido.");
             }
         }
 
         function clearFormPacotes() {
-            document.getElementById('date-pacotes').value = '';
+            document.getElementById('date-pacotes').value = new Date().toLocaleDateString('en-CA');
             document.getElementById('quantity-pacotes').value = '';
             document.getElementById('route-pacotes').value = '';
             document.getElementById('driver-pacotes').value = '';
         }
 
-        // FUNÇÃO ATUALIZADA - Deleta um registro no backend
-        async function deleteRecord(index) {
+        async function deleteRecord(id) {
             if (confirm('Tem certeza que deseja excluir este registro?')) {
-                try {
-                    const recordId = records[index].id;
-                    const response = await fetch(`/api/records/${recordId}`, {
-                        method: 'DELETE'
-                    });
-                    if (!response.ok) throw new Error('Falha ao deletar o registro.');
-                    records.splice(index, 1);
-                    loadRecords();
-                } catch (error) {
-                    showAlert('Erro ao deletar registro: ' + error.message);
+                const { error } = await supabase.from('rotas').delete().eq('id', id);
+                if (error) {
+                    console.error('Erro ao deletar registro:', error);
+                    showAlert('Erro ao deletar o registro. Tente novamente.');
+                } else {
+                    showAlert('Registro excluído com sucesso!');
+                    loadRecordsFromSupabase();
                 }
             }
         }
+        
+        let editStopIndex = -1;
+        let currentObservationIndex = -1;
 
-        // FUNÇÕES DE PARADAS TAMBÉM PRECISAM SER REFEITAS PARA O BACKEND
-        // Por enquanto, continuam usando o localStorage
-        let stops = JSON.parse(localStorage.getItem('stops')) || [];
-        function saveStopRecord() {
-            // Lógica de salvar paradas no backend
-            showAlert('A função de salvar paradas ainda não está conectada ao backend.');
+        async function saveStopRecord() {
+            if (!currentRouteId) {
+                showAlert('Por favor, selecione ou crie uma rota na aba "Pacotes" para adicionar paradas.');
+                return;
+            }
+
+            const stopNumber = document.getElementById('stopNumber').value;
+            const quantity = document.getElementById('quantity-paradas').value;
+
+            if (!stopNumber || !quantity) {
+                showAlert('Por favor, preencha todos os campos.');
+                return;
+            }
+
+            const { data: existingStops, error: checkError } = await supabase
+                .from('paradas')
+                .select('numero_parada')
+                .eq('rota_id', currentRouteId)
+                .eq('numero_parada', stopNumber);
+
+            if (existingStops && existingStops.length > 0 && editStopIndex === -1) {
+                 showAlert('Este número de parada já existe nesta rota. Por favor, edite a parada existente ou insira um novo número.');
+                 return;
+            }
+            
+            const newStop = { 
+                rota_id: currentRouteId,
+                numero_parada: Number(stopNumber), 
+                quantidade: Number(quantity)
+            };
+            
+            if (editStopIndex === -1) {
+                const { error } = await supabase
+                .from('paradas')
+                .insert(newStop);
+                
+                if (error) {
+                    console.error('Erro ao salvar parada:', error);
+                    showAlert('Erro ao salvar a parada. Tente novamente.');
+                } else {
+                    showAlert('Parada salva com sucesso!');
+                }
+            } else {
+                const { error } = await supabase
+                .from('paradas')
+                .update(newStop)
+                .eq('id', editStopIndex);
+                
+                if (error) {
+                    console.error('Erro ao atualizar parada:', error);
+                    showAlert('Erro ao atualizar a parada. Tente novamente.');
+                } else {
+                    showAlert('Parada atualizada com sucesso!');
+                }
+                editStopIndex = -1;
+                document.getElementById('saveStopBtn').textContent = 'Salvar Parada';
+            }
+            
+            loadStopsForRoute(currentRouteId);
+            clearFormParadas();
         }
+        
+        async function loadStopsForRoute(routeId) {
+            const { data: allStops, error } = await supabase
+                .from('paradas')
+                .select('*')
+                .eq('rota_id', routeId)
+                .order('numero_parada', { ascending: true });
 
-        function loadStopRecords() {
-            // Lógica para carregar paradas do backend
-            showAlert('A função de carregar paradas ainda não está conectada ao backend.');
-            // Código provisório para evitar erros, continua usando localStorage
+            if (error) {
+                console.error('Erro ao carregar paradas:', error);
+                return;
+            }
+
             const activeTableBody = document.getElementById('stopsTableBody');
             const completedTableBody = document.getElementById('completedStopsTableBody');
+
             activeTableBody.innerHTML = '';
             completedTableBody.innerHTML = '';
-            stops.forEach((stop, index) => {
+            
+            const total = allStops.reduce((sum, stop) => sum + (Number(stop.quantidade) || 0), 0);
+            document.getElementById('totalStopsCount').textContent = total;
+
+            allStops.forEach((stop, index) => {
                 const row = document.createElement('tr');
-                const observationClass = stop.observations.trim() !== '' ? 'filled-observation' : '';
-                const photoCellContent = stop.photo
-                    ? `<span style="cursor:pointer;" onclick="showFullPhoto('${stop.photo}')">📸</span>`
+                const observationClass = stop.observacao && stop.observacao.trim() !== '' ? 'filled-observation' : '';
+                const photoCellContent = stop.foto_url 
+                    ? `<span style="cursor:pointer;" onclick="showFullPhoto('${stop.foto_url}')">📸</span>` 
                     : 'N/A';
+                
                 row.innerHTML = `
-                    <td>${stop.stopNumber}</td>
-                    <td><b>${stop.quantity}</b></td>
+                    <td>${stop.numero_parada}</td>
+                    <td><b>${stop.quantidade}</b></td>
                     <td>
-                        <textarea class="observation-field ${observationClass}" readonly onclick="openObservationPopup(${index});">${stop.observations}</textarea>
+                        <textarea class="observation-field ${observationClass}" readonly onclick="openObservationPopup('${stop.id}');">${stop.observacao || ''}</textarea>
                     </td>
                     <td style="text-align: center;">${photoCellContent}</td>
                     <td class="actions">
-                        <input type="checkbox" class="completed-checkbox" ${stop.completed ? 'checked' : ''} onclick="event.stopPropagation(); toggleStopCompletion(${index});">
+                        <input type="checkbox" class="completed-checkbox" ${stop.concluida ? 'checked' : ''} onclick="event.stopPropagation(); toggleStopCompletion('${stop.id}');">
                         <label for="photo-input-${index}" class="photo-btn">📷</label>
-                        <input type="file" id="photo-input-${index}" accept="image/*" capture="camera" class="hidden-file-input" onchange="handlePhotoCapture(${index}, event)">
-                        <button class="edit-btn" onclick="event.stopPropagation(); editStopRecord(${index});">E</button>
-                        <button class="delete-btn" onclick="event.stopPropagation(); deleteStopRecord(${index});">X</button>
+                        <input type="file" id="photo-input-${index}" accept="image/*" capture="camera" class="hidden-file-input" onchange="handlePhotoCapture('${stop.id}', event)">
+                        <button class="edit-btn" onclick="event.stopPropagation(); editStopRecord('${stop.id}');">E</button>
+                        <button class="delete-btn" onclick="event.stopPropagation(); deleteStopRecord('${stop.id}');">X</button>
                     </td>
                 `;
-                if (stop.completed) {
+
+                if (stop.concluida) {
                     completedTableBody.appendChild(row);
                 } else {
                     activeTableBody.appendChild(row);
                 }
             });
-            const total = stops.reduce((sum, stop) => sum + (Number(stop.quantity) || 0), 0);
-            document.getElementById('totalStopsCount').textContent = total;
         }
-
-        // O resto do código JavaScript permanece inalterado por enquanto
-        // Você precisará de mais endpoints no backend para as paradas, mas a base já está criada.
-
-        function handlePhotoCapture(index, event) {
+        
+        async function handlePhotoCapture(id, event) {
             const file = event.target.files[0];
             if (!file) return;
-            const reader = new FileReader();
-            reader.onloadend = () => {
-                stops[index].photo = reader.result;
-                localStorage.setItem('stops', JSON.stringify(stops));
-                loadStopRecords();
-                // Salva a data do último cache
-                localStorage.setItem('lastCacheDate', new Date().toISOString());
-            };
-            reader.readAsDataURL(file);
-        }
 
-        function openObservationPopup(index) {
-            currentObservationIndex = index;
-            const currentObservation = stops[index].observations;
-            const currentAddress = stops[index].address;
-            document.getElementById('observationTextarea').value = currentObservation;
-            document.getElementById('observationAddress').value = currentAddress;
+            const { data, error } = await supabase.storage
+                .from('photos')
+                .upload(`public/${id}-${Date.now()}.png`, file, {
+                    cacheControl: '3600',
+                    upsert: false
+                });
+            
+            if (error) {
+                console.error('Erro ao fazer upload da foto:', error);
+                showAlert('Erro ao fazer upload da foto. Tente novamente.');
+                return;
+            }
+
+            const publicURL = `${SUPABASE_URL}/storage/v1/object/public/photos/${data.path}`;
+            await supabase.from('paradas').update({ foto_url: publicURL }).eq('id', id);
+
+            loadStopsForRoute(currentRouteId);
+            showAlert('Foto adicionada com sucesso!');
+        }
+        
+        let currentStopIdForObservation = null;
+
+        async function openObservationPopup(id) {
+            const { data, error } = await supabase.from('paradas').select('*').eq('id', id).single();
+            if (error) {
+                console.error('Erro ao carregar parada:', error);
+                return;
+            }
+            currentStopIdForObservation = id;
+            document.getElementById('observationTextarea').value = data.observacao || '';
+            document.getElementById('observationAddress').value = data.endereco || '';
             document.getElementById('observationPopupOverlay').style.display = 'flex';
         }
 
@@ -1514,36 +1613,49 @@
             }
         }
 
-        function saveObservation() {
+        async function saveObservation() {
             const newObservation = document.getElementById('observationTextarea').value;
             const newAddress = document.getElementById('observationAddress').value;
-            if (currentObservationIndex !== -1) {
-                stops[currentObservationIndex].observations = newObservation;
-                stops[currentObservationIndex].address = newAddress;
-                localStorage.setItem('stops', JSON.stringify(stops));
-                loadStopRecords();
-                localStorage.setItem('lastCacheDate', new Date().toISOString());
+            
+            if (currentStopIdForObservation) {
+                const { error } = await supabase.from('paradas')
+                    .update({ observacao: newObservation, endereco: newAddress })
+                    .eq('id', currentStopIdForObservation);
+                
+                if (error) {
+                    console.error('Erro ao salvar observação:', error);
+                    showAlert('Erro ao salvar a observação. Tente novamente.');
+                }
+                loadStopsForRoute(currentRouteId);
             }
             closeObservationPopup();
         }
 
-        function toggleStopCompletion(index) {
-            stops[index].completed = !stops[index].completed;
-            localStorage.setItem('stops', JSON.stringify(stops));
-            loadStopRecords();
+        async function toggleStopCompletion(id) {
+            const { data: currentStop, error } = await supabase.from('paradas').select('concluida').eq('id', id).single();
+            if (error) return;
+            
+            const { error: updateError } = await supabase.from('paradas')
+                .update({ concluida: !currentStop.concluida })
+                .eq('id', id);
+            
+            if (updateError) {
+                console.error('Erro ao atualizar status:', updateError);
+                showAlert('Erro ao atualizar o status. Tente novamente.');
+            }
+            loadStopsForRoute(currentRouteId);
         }
 
-        function updateObservation(index, value) {
-            stops[index].observations = value;
-            localStorage.setItem('stops', JSON.stringify(stops));
-        }
-
-        function editStopRecord(index) {
-            const record = stops[index];
-            document.getElementById('stopNumber').value = record.stopNumber;
-            document.getElementById('quantity-paradas').value = record.quantity;
-            editStopIndex = index;
-            document.getElementById('saveStopBtn').textContent = 'Salvar Parada';
+        async function editStopRecord(id) {
+            const { data, error } = await supabase.from('paradas').select('*').eq('id', id).single();
+            if (error) {
+                console.error('Erro ao carregar parada:', error);
+                return;
+            }
+            document.getElementById('stopNumber').value = data.numero_parada;
+            document.getElementById('quantity-paradas').value = data.quantidade;
+            editStopIndex = id;
+            document.getElementById('saveStopBtn').textContent = 'Atualizar Parada';
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
@@ -1552,117 +1664,121 @@
             document.getElementById('quantity-paradas').value = '';
         }
 
-        function deleteStopRecord(index) {
-            if (confirm('Tem certeza que deseja excluir este registro?')) {
-                stops.splice(index, 1);
-                localStorage.setItem('stops', JSON.stringify(stops));
-                loadStopRecords();
+        async function deleteStopRecord(id) {
+            if (confirm('Tem certeza que deseja excluir esta parada?')) {
+                const { error } = await supabase.from('paradas').delete().eq('id', id);
+                if (error) {
+                    console.error('Erro ao deletar parada:', error);
+                    showAlert('Erro ao deletar a parada. Tente novamente.');
+                } else {
+                    showAlert('Parada excluída com sucesso!');
+                    loadStopsForRoute(currentRouteId);
+                }
             }
         }
 
-        function finishRoute() {
-            const activeRoutes = records.filter(rec => !rec.stopDetails);
+        async function finishRoute() {
+            const { data: activeRoutes, error } = await supabase
+                .from('rotas')
+                .select('id, rota, motorista, data');
 
-            if (activeRoutes.length === 0) {
-                showAlert('Não há rotas ativas para finalizar.');
+            if (error) {
+                console.error('Erro ao carregar rotas ativas:', error);
+                showAlert('Erro ao carregar rotas ativas.');
                 return;
             }
 
             const activeRoutesList = document.getElementById('activeRoutesList');
             activeRoutesList.innerHTML = '';
-
+            
             activeRoutes.forEach(route => {
                 const button = document.createElement('button');
-                button.textContent = `${route.route} (${route.driver}) - ${formatFullDate(route.date)}`;
+                button.textContent = `${route.rota} (${route.motorista}) - ${formatFullDate(route.data)}`;
                 button.style.marginBottom = '10px';
                 button.style.width = '100%';
-                button.onclick = () => confirmAndSaveRoute(route.date, route.route);
+                button.onclick = () => confirmAndSaveRoute(route.id);
                 activeRoutesList.appendChild(button);
             });
 
             document.getElementById('selectRoutePopupOverlay').style.display = 'flex';
         }
-
+        
         function closeSelectRoutePopup() {
             document.getElementById('selectRoutePopupOverlay').style.display = 'none';
         }
 
-        function confirmAndSaveRoute(date, routeName) {
-            if (stops.length === 0) {
-                showAlert('Não há paradas para finalizar.');
+        async function confirmAndSaveRoute(id) {
+            const { data: stops, error: stopsError } = await supabase
+                .from('paradas')
+                .select('*')
+                .eq('rota_id', id);
+            
+            if (stopsError) {
+                console.error('Erro ao carregar paradas:', stopsError);
+                showAlert('Erro ao carregar paradas para finalizar a rota.');
                 return;
             }
 
-            const recordToUpdate = records.find(rec => rec.date === date && rec.route === routeName);
-
-            if (!recordToUpdate) {
-                showAlert('Rota não encontrada. Verifique se o nome e a data estão corretos.');
-                return;
+            const totalPackages = stops.reduce((sum, stop) => sum + Number(stop.quantidade), 0);
+            
+            const { error: updateError } = await supabase
+                .from('rotas')
+                .update({ quantidade_total: totalPackages })
+                .eq('id', id);
+            
+            if (updateError) {
+                console.error('Erro ao atualizar a rota:', updateError);
+                showAlert('Erro ao finalizar a rota. Tente novamente.');
+            } else {
+                showAlert('A rota foi finalizada e os dados de paradas foram salvos.');
+                closeSelectRoutePopup();
+                loadRecordsFromSupabase();
             }
-
-            let totalPackagesInStops = 0;
-            recordToUpdate.stopDetails = stops.map(stop => {
-                totalPackagesInStops += Number(stop.quantity) || 0;
-                const isFailed = !stop.completed || (stop.observations && stop.observations.toLowerCase().includes('insuc'));
-                return {
-                    stopNumber: stop.stopNumber,
-                    quantity: stop.quantity,
-                    observations: stop.observations,
-                    address: stop.address || '',
-                    isFailed: isFailed,
-                    photo: stop.photo
-                };
-            });
-            recordToUpdate.quantity = totalPackagesInStops;
-            localStorage.setItem('records', JSON.stringify(records));
-
-            stops = [];
-            localStorage.setItem('stops', JSON.stringify(stops));
-
-            loadRecords();
-            loadStopRecords();
-
-            closeSelectRoutePopup();
-            showAlert(`A rota "${routeName}" foi finalizada e os dados de paradas foram salvos.`);
-            localStorage.setItem('lastCacheDate', new Date().toISOString());
         }
-
-        function showRouteDetails(date, route) {
+        
+        async function showRouteDetails(id) {
             openTab('routeDetails', -1);
-            const record = records.find(rec => rec.date === date && rec.route === route);
-            document.getElementById('routeDetailsTitle').textContent = `${formatFullDate(record.date)} - Rota: ${record.route}`;
+            const { data: record, error } = await supabase
+                .from('rotas')
+                .select(`
+                    data,
+                    rota,
+                    paradas (numero_parada, quantidade, observacao, endereco, foto_url, concluida)
+                `)
+                .eq('id', id)
+                .single();
+
+            if (error) {
+                console.error('Erro ao carregar detalhes da rota:', error);
+                showAlert('Erro ao carregar detalhes da rota.');
+                return;
+            }
+
+            document.getElementById('routeDetailsTitle').textContent = `${formatFullDate(record.data)} - Rota: ${record.rota}`;
             const detailsTableBody = document.getElementById('routeDetailsTableBody');
             detailsTableBody.innerHTML = '';
             let totalPackagesInStops = 0;
             let failedCount = 0;
-            if (record.stopDetails && record.stopDetails.length > 0) {
-                record.stopDetails.forEach(stop => {
+            
+            if (record.paradas && record.paradas.length > 0) {
+                record.paradas.sort((a,b) => a.numero_parada - b.numero_parada).forEach(stop => {
                     const row = document.createElement('tr');
-                    totalPackagesInStops += Number(stop.quantity) || 0;
-                    if (stop.isFailed) {
+                    totalPackagesInStops += Number(stop.quantidade) || 0;
+                    if (!stop.concluida) {
                         failedCount++;
                         row.style.backgroundColor = 'rgba(220, 53, 69, 0.2)';
                     }
-                    const photoCellContent = stop.photo
-                        ? `<span style="cursor:pointer;" onclick="showFullPhoto('${stop.photo}')">📸</span>`
+                    const photoCellContent = stop.foto_url 
+                        ? `<span style="cursor:pointer;" onclick="showFullPhoto('${stop.foto_url}')">📸</span>` 
                         : 'N/A';
                     row.innerHTML = `
-                        <td>${stop.stopNumber}</td>
-                        <td>${stop.quantity}</td>
-                        <td>${stop.observations || 'N/A'}</td>
+                        <td>${stop.numero_parada}</td>
+                        <td>${stop.quantidade}</td>
+                        <td>${stop.observacao || 'N/A'}</td>
                         <td style="text-align: center;">${photoCellContent}</td>
                     `;
                     detailsTableBody.appendChild(row);
                 });
-            } else if (record.observations) {
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td>N/A</td>
-                    <td>N/A</td>
-                    <td>${record.observations}</td>
-                    <td style="text-align: center;">N/A</td>
-                `;
-                detailsTableBody.appendChild(row);
             } else {
                 const row = document.createElement('tr');
                 row.innerHTML = `<td colspan="4">Nenhum detalhe de parada para esta rota.</td>`;
@@ -1677,51 +1793,11 @@
         }
 
         function exportData() {
-            const data = {
-                records: records,
-                stops: stops,
-                drivers: drivers
-            };
-            const json = JSON.stringify(data, null, 2);
-            const blob = new Blob([json], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'dados_deluna.json';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
+            showAlert('A funcionalidade de exportar dados ainda está em desenvolvimento para o Supabase.');
         }
 
         function importData(event) {
-            const file = event.target.files[0];
-            if (!file) {
-                return;
-            }
-            const reader = new FileReader();
-            reader.onload = (e) => {
-                try {
-                    const importedData = JSON.parse(e.target.result);
-                    if (importedData.records && importedData.stops && importedData.drivers) {
-                        records = importedData.records;
-                        stops = importedData.stops;
-                        drivers = importedData.drivers;
-                        localStorage.setItem('records', JSON.stringify(records));
-                        localStorage.setItem('stops', JSON.stringify(stops));
-                        localStorage.setItem('drivers', JSON.stringify(drivers));
-                        loadRecords();
-                        loadStopRecords();
-                        showAlert('Dados importados com sucesso!');
-                        localStorage.setItem('lastCacheDate', new Date().toISOString());
-                    } else {
-                        showAlert('Formato de arquivo JSON inválido. Por favor, selecione um arquivo válido.');
-                    }
-                } catch (error) {
-                    showAlert('Erro ao processar o arquivo. Certifique-se de que é um arquivo JSON válido.');
-                }
-            };
-            reader.readAsText(file);
+            showAlert('A funcionalidade de importar dados ainda está em desenvolvimento para o Supabase.');
         }
 
         function showCustomPopup(date, value) {
@@ -1741,24 +1817,25 @@
         function closeGainsPopup() {
             document.getElementById('gainsByMonthPopupOverlay').style.display = 'none';
         }
-
+        
         function getWeekStartDate(date) {
             const d = new Date(date + 'T00:00:00');
             const dayOfWeek = d.getDay();
             const diff = d.getDate() - dayOfWeek;
             return new Date(d.setDate(diff)).toISOString().slice(0, 10);
         }
-
-        function updateGainsTable() {
+        
+        async function updateGainsTable() {
             const tableBody = document.getElementById('gainsTableBody');
             tableBody.innerHTML = '';
-
+            
             const selectedMonth = document.getElementById('month-filter').value;
             const selectedYear = document.getElementById('year-filter').value;
-
+            
             const yearFilter = document.getElementById('year-filter');
             if (yearFilter.options.length <= 1) {
-                const uniqueYears = [...new Set(records.map(r => new Date(r.date).getFullYear()))].sort((a, b) => b - a);
+                const { data: yearsData } = await supabase.from('rotas').select('data');
+                const uniqueYears = [...new Set(yearsData.map(r => new Date(r.data).getFullYear()))].sort((a, b) => b - a);
                 uniqueYears.forEach(year => {
                     const option = document.createElement('option');
                     option.value = year;
@@ -1769,23 +1846,28 @@
             }
 
             const dailyTotals = {};
+            const { data: records, error } = await supabase.from('rotas').select('*');
+            if (error) {
+                console.error('Erro ao carregar dados de ganhos:', error);
+                return;
+            }
 
             records.forEach(record => {
-                const recordDate = new Date(record.date + 'T00:00:00');
+                const recordDate = new Date(record.data + 'T00:00:00');
                 const recordMonth = recordDate.getMonth();
                 const recordYear = recordDate.getFullYear();
-
+                
                 const monthMatch = selectedMonth === '' || recordMonth === parseInt(selectedMonth);
                 const yearMatch = selectedYear === '' || recordYear === parseInt(selectedYear);
 
                 if (monthMatch && yearMatch) {
-                    if (!dailyTotals[record.date]) {
-                        dailyTotals[record.date] = { packages: 0, gains: 0 };
+                    if (!dailyTotals[record.data]) {
+                        dailyTotals[record.data] = { packages: 0, gains: 0 };
                     }
-                    const packages = record.quantity;
+                    const packages = record.quantidade_total;
                     const gains = packages * 2.50;
-                    dailyTotals[record.date].packages += packages;
-                    dailyTotals[record.date].gains += gains;
+                    dailyTotals[record.data].packages += packages;
+                    dailyTotals[record.data].gains += gains;
                 }
             });
 
@@ -1798,24 +1880,24 @@
             const weeklyGains = {};
             Object.keys(dailyTotals).forEach(dateString => {
                 const weekKey = getWeekStartDate(dateString);
-
+                
                 if (!weeklyGains[weekKey]) {
                     weeklyGains[weekKey] = { total: 0, days: [] };
                 }
-
+                
                 weeklyGains[weekKey].total += dailyTotals[dateString].gains;
-                weeklyGains[weekKey].days.push({
-                    date: dateString,
-                    packages: dailyTotals[dateString].packages,
-                    gains: dailyTotals[dateString].gains
+                weeklyGains[weekKey].days.push({ 
+                    date: dateString, 
+                    packages: dailyTotals[dateString].packages, 
+                    gains: dailyTotals[dateString].gains 
                 });
             });
-
+            
             const sortedWeeks = Object.keys(weeklyGains).sort((a, b) => new Date(b) - new Date(a));
-
+            
             sortedWeeks.forEach(weekKey => {
                 const weekData = weeklyGains[weekKey];
-
+                
                 weekData.days.sort((a, b) => new Date(b.date) - new Date(a.date)).forEach(day => {
                     const dayRow = document.createElement('tr');
                     dayRow.innerHTML = `
@@ -1825,7 +1907,7 @@
                     `;
                     tableBody.appendChild(dayRow);
                 });
-
+                
                 const totalRow = document.createElement('tr');
                 totalRow.classList.add('week-total-row');
                 totalRow.innerHTML = `
@@ -1840,7 +1922,7 @@
         function showGainsByMonthPopup(monthIndex, year, dailyTotals) {
             const monthName = document.querySelector(`#month-filter option[value='${monthIndex}']`).textContent;
             document.getElementById('gainsPopupTitle').textContent = `Ganhos em ${monthName} de ${year}`;
-
+            
             let firstHalfGains = 0;
             let secondHalfGains = 0;
             let totalMonthGains = 0;
@@ -1848,7 +1930,7 @@
             Object.keys(dailyTotals).forEach(dateString => {
                 const day = new Date(dateString + 'T00:00:00').getDate();
                 const gains = dailyTotals[dateString].gains;
-
+                
                 if (day <= 15) {
                     firstHalfGains += gains;
                 } else {
@@ -1893,7 +1975,7 @@
                 return;
             }
             document.getElementById(currentInputField).value = value;
-
+            
             if (currentInputField === 'stopNumber') {
                 openNumericKeyboard('quantity-paradas');
             } else if (currentInputField === 'quantity-paradas') {
@@ -1913,7 +1995,7 @@
         let touchstartX = 0;
         let touchendX = 0;
         const swipeZone = document.querySelector('.container');
-
+        
         swipeZone.addEventListener('touchstart', e => {
             touchstartX = e.changedTouches[0].screenX;
         });
@@ -1931,13 +2013,13 @@
                 const nextIndex = (currentTabIndex + 1) % tabNames.length;
                 openTab(tabNames[nextIndex], nextIndex);
             }
-
+            
             if (swipeDistance > swipeThreshold) {
                 const prevIndex = (currentTabIndex - 1 + tabNames.length) % tabNames.length;
                 openTab(tabNames[prevIndex], prevIndex);
             }
         }
-
+        
         function showFullPhoto(base64Image) {
             document.getElementById('fullPhoto').src = base64Image;
             document.getElementById('fullPhotoPopupOverlay').style.display = 'flex';
@@ -1956,7 +2038,7 @@
         function closeAlertPopup() {
             document.getElementById('alertPopupOverlay').style.display = 'none';
         }
-
+        
         // Função para limpar o cache (localStorage)
         function clearCache() {
             if (confirm('Tem certeza que deseja apagar TODOS os dados salvos localmente (registros, paradas and motoristas)?')) {
@@ -1984,15 +2066,15 @@
        // Funções para o novo pop-up de configurações
         function openSettingsPopup() {
             const lastCacheDate = localStorage.getItem('lastCacheDate');
-            document.getElementById('lastCacheDate').textContent = lastCacheDate
-                ? `Último salvamento: ${new Date(lastCacheDate).toLocaleString('pt-BR')}`
+            document.getElementById('lastCacheDate').textContent = lastCacheDate 
+                ? `Último salvamento: ${new Date(lastCacheDate).toLocaleString('pt-BR')}` 
                 : 'Nenhum dado salvo.';
             document.getElementById('settingsPopupOverlay').style.display = 'flex';
-
+            
             // Carregar configurações de tema
             const isDarkTheme = document.body.classList.contains('dark-theme');
             document.getElementById('theme-toggle').checked = isDarkTheme;
-
+            
             // Carregar tamanho da fonte salvo
             const savedFontSize = localStorage.getItem('keypadFontSize') || '24';
             document.getElementById('fontSizeSelect').value = savedFontSize;
@@ -2028,8 +2110,8 @@
         let myLocationMarker = null;
 
         function openMapPopup() {
-            if (stops.length === 0) {
-                showAlert('Não há paradas para exibir no mapa.');
+             if (currentRouteId === null) {
+                showAlert('Por favor, selecione uma rota na aba "Pacotes" para ver as paradas no mapa.');
                 return;
             }
             document.getElementById('mapPopupOverlay').style.display = 'flex';
@@ -2047,40 +2129,42 @@
             }
             document.getElementById('mapPopupOverlay').style.display = 'none';
         }
-
-        // Nova função para confirmar a entrega no mapa
-        function confirmDeliveryFromMap(stopNumber) {
-            const stopIndex = stops.findIndex(stop => stop.stopNumber === stopNumber);
-            if (stopIndex !== -1) {
-                stops[stopIndex].completed = true;
-                localStorage.setItem('stops', JSON.stringify(stops));
-                loadStopRecords();
-
-                // Atualiza o ícone do marcador no mapa após a entrega
-                const completedIcon = L.divIcon({
-                    className: 'marker-div',
-                    html: `<div class="marker-pin completed">${stopNumber}</div>`,
-                    iconSize: [30, 42],
-                    iconAnchor: [15, 42]
-                });
-
-                myMap.eachLayer(layer => {
-                    if (layer instanceof L.Marker && layer.getPopup()._content.includes(`Parada: ${stopNumber}`)) {
-                        layer.setIcon(completedIcon);
-                        // Atualiza o conteúdo do popup para refletir a mudança
-                        layer.setPopupContent(`
-                            <b>${stops[stopIndex].address.split(',')[0].trim()}</b><br>
-                            Parada: ${stopNumber}<br>
-                            Pacotes: ${stops[stopIndex].quantity}<br>
-                            Observação: ${stops[stopIndex].observations || 'N/A'}<br>
-                            <br>
-                            <span style="color: green; font-weight: bold;">Entrega Concluída</span>
-                        `);
-                    }
-                });
+        
+        async function confirmDeliveryFromMap(stopId) {
+            const { error } = await supabase.from('paradas').update({ concluida: true }).eq('id', stopId);
+            if (error) {
+                console.error('Erro ao confirmar entrega:', error);
+                showAlert('Erro ao confirmar a entrega. Tente novamente.');
+                return;
             }
-        }
+            
+            const { data: stopData, error: stopError } = await supabase.from('paradas').select('*').eq('id', stopId).single();
+            if (stopError) return;
 
+            // Atualiza o ícone do marcador no mapa após a entrega
+            const completedIcon = L.divIcon({
+                className: 'marker-div',
+                html: `<div class="marker-pin completed">${stopData.numero_parada}</div>`,
+                iconSize: [30, 42],
+                iconAnchor: [15, 42]
+            });
+
+            myMap.eachLayer(layer => {
+                if (layer instanceof L.Marker && layer.options.stopId === stopId) {
+                    layer.setIcon(completedIcon);
+                    layer.setPopupContent(`
+                        <b>${stopData.endereco.split(',')[0].trim()}</b><br>
+                        Parada: ${stopData.numero_parada}<br>
+                        Pacotes: ${stopData.quantidade}<br>
+                        Observação: ${stopData.observacao || 'N/A'}<br>
+                        <br>
+                        <span style="color: green; font-weight: bold;">Entrega Concluída</span>
+                    `);
+                }
+            });
+            loadStopsForRoute(currentRouteId);
+        }
+        
         async function createMap() {
             myMap = L.map('map').setView([-22.9068, -43.1729], 13);
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -2100,29 +2184,38 @@
 
             const bounds = [];
             const markers = [];
+            
+            const { data: stops, error } = await supabase
+                .from('paradas')
+                .select('*')
+                .eq('rota_id', currentRouteId);
+            
+            if (error) {
+                console.error('Erro ao carregar paradas para o mapa:', error);
+                return;
+            }
 
             for (const stop of stops) {
-                if (stop.address) {
-                    const coords = await geocodeAddress(stop.address);
+                if (stop.endereco) {
+                    const coords = await geocodeAddress(stop.endereco);
                     if (coords) {
-                        // Cria o ícone com o número da parada
                         const customIcon = L.divIcon({
                             className: 'marker-div',
-                            html: `<div class="marker-pin ${stop.completed ? 'completed' : ''}">${stop.stopNumber}</div>`,
+                            html: `<div class="marker-pin ${stop.concluida ? 'completed' : ''}">${stop.numero_parada}</div>`,
                             iconSize: [30, 42],
                             iconAnchor: [15, 42]
                         });
-
+                        
                         const popupContent = `
-                            <b>${stop.address.split(',')[0].trim()}</b><br>
-                            Parada: ${stop.stopNumber}<br>
-                            Pacotes: ${stop.quantity}<br>
-                            Observação: ${stop.observations || 'N/A'}<br>
+                            <b>${stop.endereco.split(',')[0].trim()}</b><br>
+                            Parada: ${stop.numero_parada}<br>
+                            Pacotes: ${stop.quantidade}<br>
+                            Observação: ${stop.observacao || 'N/A'}<br>
                             <br>
-                            ${stop.completed ? '<span style="color: green; font-weight: bold;">Entrega Concluída</span>' : `<button onclick="confirmDeliveryFromMap(${stop.stopNumber})">Confirmar Entrega</button>`}
+                            ${stop.concluida ? '<span style="color: green; font-weight: bold;">Entrega Concluída</span>' : `<button onclick="confirmDeliveryFromMap('${stop.id}')">Confirmar Entrega</button>`}
                         `;
-
-                        const marker = L.marker(coords, { icon: customIcon }).addTo(myMap)
+                        
+                        const marker = L.marker(coords, { icon: customIcon, stopId: stop.id }).addTo(myMap)
                             .bindPopup(popupContent);
                         markers.push(marker);
                         bounds.push(coords);
@@ -2156,12 +2249,10 @@
                 showAlert('Geolocalização não é suportada pelo seu navegador.');
             }
         }
-
-        // Variáveis globais para o reconhecimento de voz
+        
         let recognition = null;
         let isListening = false;
-
-        // Dicionário para converter números por extenso
+        
         const numberWords = {
             'zero': 0, 'um': 1, 'uma': 1, 'dois': 2, 'duas': 2, 'três': 3, 'quatro': 4, 'cinco': 5,
             'seis': 6, 'sete': 7, 'oito': 8, 'nove': 9, 'dez': 10, 'onze': 11, 'doze': 12, 'treze': 13,
@@ -2170,7 +2261,6 @@
             'oitenta': 80, 'noventa': 90, 'cem': 100
         };
 
-        // Função para abrir o pop-up de entrada de voz
         function openVoiceInputPopup() {
             document.getElementById('voiceInputPopupOverlay').style.display = 'flex';
             document.getElementById('voiceMessage').textContent = 'Pressione e segure o microfone para falar.';
@@ -2178,7 +2268,6 @@
             document.getElementById('voiceStopNumber').value = '';
             document.getElementById('voiceQuantity').value = '';
 
-            // Verifica se a API de reconhecimento de voz é suportada
             if ('webkitSpeechRecognition' in window) {
                 recognition = new webkitSpeechRecognition();
                 recognition.continuous = false;
@@ -2214,38 +2303,32 @@
             }
         }
 
-        // Inicia o reconhecimento ao pressionar o botão
         function startListening() {
             if (recognition && !isListening) {
                 recognition.start();
             }
         }
 
-        // Para o reconhecimento ao soltar o botão
         function stopListening() {
             if (recognition && isListening) {
                 recognition.stop();
             }
         }
 
-        // Processa o texto transcrito
         function processVoiceInput(text) {
             const addressInput = document.getElementById('voiceAddress');
             const stopNumberInput = document.getElementById('voiceStopNumber');
             const quantityInput = document.getElementById('voiceQuantity');
-
+            
             let stopNumber = '';
             let quantity = '';
             let address = text;
 
-            // Converter a frase para minúsculas
             const normalizedText = text.toLowerCase();
 
-            // Tentar extrair o número da parada e a quantidade
             const parts = normalizedText.split(' ');
             let tempParts = [...parts];
 
-            // 1. Procurar por "parada"
             const paradaIndex = tempParts.indexOf('parada');
             if (paradaIndex !== -1 && tempParts.length > paradaIndex + 1) {
                 let nextWord = tempParts[paradaIndex + 1].replace(',', '');
@@ -2257,7 +2340,6 @@
                 tempParts.splice(paradaIndex, 2);
             }
 
-            // 2. Procurar por "pacote" ou "pacotes"
             const pacoteIndex = tempParts.findIndex(p => p.includes('pacote'));
             if (pacoteIndex !== -1 && pacoteIndex > 0) {
                 let prevWord = tempParts[pacoteIndex - 1].replace(',', '');
@@ -2269,10 +2351,8 @@
                 tempParts.splice(pacoteIndex - 1, 2);
             }
 
-            // O resto é o endereço
             address = tempParts.join(' ');
-
-            // Corrige a capitalização do endereço
+            
             const words = address.split(' ').map(word => {
                 if (word.length > 0) {
                     return word.charAt(0).toUpperCase() + word.slice(1);
@@ -2284,11 +2364,10 @@
             addressInput.value = address.trim();
             stopNumberInput.value = stopNumber;
             quantityInput.value = quantity;
-
+            
             document.getElementById('voiceMessage').textContent = 'Informações extraídas. Verifique e confirme.';
         }
 
-        // Salva os dados do pop-up de voz
         function saveVoiceInput() {
             const stopNumber = document.getElementById('voiceStopNumber').value;
             const quantity = document.getElementById('voiceQuantity').value;
@@ -2299,62 +2378,43 @@
                 return;
             }
 
-            // Preenche os campos principais da aba de Paradas
             document.getElementById('stopNumber').value = stopNumber;
             document.getElementById('quantity-paradas').value = quantity;
-
-            // Encontra ou cria a parada e adiciona o endereço
-            const stopIndex = stops.findIndex(s => s.stopNumber == stopNumber);
-            if (stopIndex !== -1) {
-                stops[stopIndex].address = address;
-                stops[stopIndex].quantity = Number(quantity);
-            } else {
-                const newStop = { stopNumber: Number(stopNumber), quantity: Number(quantity), completed: false, observations: '', address: address, photo: '' };
-                stops.push(newStop);
-            }
-
-            localStorage.setItem('stops', JSON.stringify(stops));
-            loadStopRecords();
+            
+            // Aqui, a lógica de salvamento com endereço e quantidade precisa ser feita
+            // Se já tiver uma parada com esse número na rota atual, atualiza.
+            // Caso contrário, cria uma nova.
+            
             closeVoiceInputPopup();
             showAlert('Dados de endereço, parada e quantidade preenchidos com sucesso!');
         }
 
-        // Fecha o pop-up de entrada de voz
         function closeVoiceInputPopup() {
             document.getElementById('voiceInputPopupOverlay').style.display = 'none';
         }
-
-        // Carregar tema salvo ao iniciar
-        window.addEventListener('load', () => {
+        
+        window.addEventListener('load', async () => {
             const savedTheme = localStorage.getItem('theme') || 'light';
             document.body.classList.add(`${savedTheme}-theme`);
             document.getElementById('theme-toggle').checked = savedTheme === 'dark';
-
-            // Carregar tamanho da fonte salvo
+            
             const savedFontSize = localStorage.getItem('keypadFontSize') || '24';
             document.documentElement.style.setProperty('--keypad-font-size', `${savedFontSize}px`);
             document.getElementById('fontSizeSelect').value = savedFontSize;
-
-            // Carregar dados iniciais - Agora do backend
-            loadRecords();
-            loadStopRecords();
-            loadDrivers();
+            
+            document.getElementById('date-pacotes').value = new Date().toLocaleDateString('en-CA');
+            
+            await loadRecordsFromSupabase();
+            openTab('paradas', 0);
         });
 
-        // Adicionar eventos de clique para abrir o teclado numérico
         document.getElementById('stopNumber').addEventListener('click', () => openNumericKeyboard('stopNumber'));
         document.getElementById('quantity-paradas').addEventListener('click', () => openNumericKeyboard('quantity-paradas'));
         document.getElementById('quantity-pacotes').addEventListener('click', () => openNumericKeyboard('quantity-pacotes'));
 
-        // Atualizar a tabela de ganhos ao mudar o filtro de mês ou ano
         document.getElementById('month-filter').addEventListener('change', updateGainsTable);
         document.getElementById('year-filter').addEventListener('change', updateGainsTable);
-
-        // Função para inicializar a data padrão no campo de data da aba Pacotes
-        document.getElementById('date-pacotes').value = new Date().toLocaleDateString('en-CA');
-
-        // Garantir que a aba inicial seja carregada corretamente
-        openTab('paradas', 0);
+        
     </script>
 </body>
 </html>
